@@ -1,0 +1,56 @@
+table {
+	border: 5px solid black !important;
+	border-collapse: collapse;
+}
+
+.tabTitHead {
+	height: 5rem;
+	min-height: 5rem;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.showInfoTable {
+	margin: 0 5rem;
+	/* margin: 5rem 5rem 0; */
+}
+
+.addInfoHead {
+	font-family: Arial, sans-serif;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #04396c;
+	margin-bottom: 1.5rem;
+
+	& a {
+		float: right;
+	}
+}
+
+th {
+	font-size: x-large;
+}
+
+@media screen and (max-width: 425px) {
+	th {
+		font-size: medium;
+	}
+
+	td {
+		font-size: small;
+	}
+
+	.showInfoTable {
+		margin: 0;
+	}
+
+	.addInfoHead {
+		flex-direction: column;
+
+		& a {
+			float: none;
+		}
+	}
+}
